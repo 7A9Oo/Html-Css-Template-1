@@ -11,5 +11,38 @@ body {
 }
 /* end global rules */
 
-/*  */
+/* start container */
 
+
+.parent {
+    background-color: #EEE;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+}
+
+/* media queries */
+
+/* small */
+@media (min-max:768px){
+    .container {
+        width: 750px;
+    }
+}
+/* medium */
+@media (min-width:992px){
+    .container {
+        width: 970px;
+    }
+}
+/* large */
+@media (min-width:1200px){
+    .container {
+        width: 1170px;
+    }
+}
