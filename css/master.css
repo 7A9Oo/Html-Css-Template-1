@@ -288,3 +288,32 @@ body {
 }
 
 /* end services section */
+
+/* start portfolio section */
+.portfolio{
+    padding-bottom: var(--section-padding);
+    padding-top: var(--section-padding);
+    background-color: #F6F6F6;
+}
+.portfolio .container .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 80px;
+}
+
+.portfolio .container .cards .card {
+    background-color: white;
+}
+.portfolio .container .cards .card h3, .portfolio .container .cards .card p {
+    padding: 15px;
+    margin: 0;
+}
+.portfolio .container .cards .card p {
+    color :#777;
+    line-height: 1.8;
+}
+.portfolio .container .cards .card img {
+    width: 100%;
+}
+/* end portfolio section */
