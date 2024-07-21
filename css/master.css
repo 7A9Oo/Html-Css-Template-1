@@ -3,10 +3,14 @@
     --main-color: #10CAB7;
     --secondary-color:#2C4755;
     --section-padding: 60px;
+    --main-duration: .3s;
 
 }
-
+html {
+    scroll-behavior: smooth;
+}
 /* end variables */
+
 /* start components */
 .special-heading {
     color: #ebeced;
@@ -29,6 +33,10 @@
     .special-heading + p {
      margin-top: -10px;
     }
+}
+.grid-3x {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
 }
 /* end components */
 /* global rules */
@@ -115,7 +123,7 @@ body {
 .header .links .icon span:nth-child(2){
     height: 3px;
     width: 60%;
-    transition: .3s;
+    transition: var(--main-duration);
 }
 
 .header .links .icon span:last-child{
@@ -152,7 +160,7 @@ body {
     padding: 15px;
     text-decoration: none;
     color: #333;
-    transition: .3s;
+    transition: var(--main-duration);
 }
 .header .links ul li a:hover {
     padding-left: 25px;
@@ -200,8 +208,6 @@ body {
     background-color: #F6F6F6;
 }
 .features .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
 }
 .features .feature {
@@ -231,8 +237,6 @@ body {
 }
 
 .services .service-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
     margin-top: 100px;
 
@@ -296,8 +300,6 @@ body {
     background-color: #F6F6F6;
 }
 .portfolio .container .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
     margin-top: 80px;
 }
